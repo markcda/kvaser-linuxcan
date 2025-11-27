@@ -159,7 +159,9 @@ endif
 obj-m := $(KV_MODULE_NAME).o
 $(KV_MODULE_NAME)-objs := $(OBJS)
 
-KBUILD_EXTRA_SYMBOLS = $(KBUILD_EXTMOD)/../common/Module.symvers
+ifndef KV_NO_EXTRA_SYMBOLS
+  KBUILD_EXTRA_SYMBOLS = $(PWD)/../common/Module.symvers
+endif
 
 CHECK_LOGFILE = checklog.txt
 

@@ -84,6 +84,7 @@ endif
 #---------------------------------
 # Debug levels are defined in config.mak
 KV_DEBUG_ON ?= 0
+# KV_NO_EXTRA_SYMBOLS = 1
 export KV_DEBUG_ON
 
 #---------------------------------

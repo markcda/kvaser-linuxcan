@@ -63,6 +63,8 @@
 
 # Makefile common
 
+KV_NO_EXTRA_SYMBOLS = 1
+
 -include $(PWD)/../kveyes.mak
 
 # module name
