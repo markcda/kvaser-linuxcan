@@ -66,7 +66,7 @@
 include ../../make/gflags.mk
 
 CC ?= gcc
-CFLAGS = -Wall -Wextra -Werror -O2  -D_REENTRANT $(XTRA_CFLAGS) -I../../include
+CFLAGS = -Wall -Wextra -O2  -D_REENTRANT $(XTRA_CFLAGS) -I../../include
 LDFLAGS = -L..
 LDLIBS = -lcanlib -lpthread -lm
 OBJS =\

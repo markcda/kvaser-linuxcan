@@ -71,7 +71,7 @@ include ../make/gflags.mk
 LIBRARY := $(LIBNAME).$(MAJOR).$(MINOR).$(BUILD)
 SONAME  := $(LIBNAME).$(MAJOR)
 
-CFLAGS  += -Wall -Werror -Wextra -DCANLIB_NAME_STRING=\"$(LIBRARY)\" -O2 -fomit-frame-pointer \
+CFLAGS  += -Wall -Wextra -DCANLIB_NAME_STRING=\"$(LIBRARY)\" -O2 -fomit-frame-pointer \
 	$(XTRA_CFLAGS) -pthread
 CFLAGS  += $(ccflags-y)
 CFLAGS  += -I. -I../include

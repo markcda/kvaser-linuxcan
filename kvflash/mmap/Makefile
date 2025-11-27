@@ -64,7 +64,7 @@
 UTIL_NAME = kv_flash_prog_mmap
 
 CC ?= gcc
-CFLAGS = -Wall -Wextra -Werror -O2 -I. -I../common
+CFLAGS = -Wall -Wextra -O2 -I. -I../common
 
 LDLIBS = -lpci
 

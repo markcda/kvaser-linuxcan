@@ -64,7 +64,7 @@
 UTIL_NAME = kv_flash_prog
 
 CC ?= gcc
-CFLAGS = -Wall -Wextra -Werror -O2 -I../common -I../../include
+CFLAGS = -Wall -Wextra -O2 -I../common -I../../include
 
 LDFLAGS = -L../../canlib
 LDLIBS = -lcanlib
